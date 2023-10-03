@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body, html{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	background: linear-gradient(-45deg, #0d0026, #13082e, #190e36, #22113f, #2b1447, #35174f, #3f1957, #4a1b5f, #561d66, #611e6d, #6d1f74, #7a207a);	
+	height: 100%;
+	color: #E2FCEF;
+	padding-top: 1em;
+	
+}
+.spanRgb {
+	font-family: "Press Start 2P";
+	font-size: 1.2em;
+	animation: color-change 10s infinite;
+}
+.spanSkills {
+	font-family: "Press Start 2P";
+	font-size: 1.2em;
+}
+@keyframes color-change {
+	0% { color: green; }
+	25% { color: blue; }
+	50% { color: red; }
+	75% { color: blue; }
+	100% { color: green; }
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.navLinks {
+	letter-spacing: 0.15em;
+	padding: 15px 20px;
+	position: relative;
+  }
+.navLinks:after {    
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #E2FCEF;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+  }
+.navLinks:hover:after { 
+	width: 100%; 
+	left: 0; 
+  }
+.myToolbar {
+	justify-content: center;
+}
