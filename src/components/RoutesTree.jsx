@@ -1,19 +1,32 @@
 import React from "react";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
-import Info from "./Info";
-import Projects from "./Projects";
-import AboutMe from "./AboutMe";
+import { createHashRouter, RouterProvider } from "react-router-dom";
+import Info from "./components/Info";
+import AboutMe from "./components/AboutMe";
+import Projects from "./components/Projects";
 
+
+
+
+const router = createHashRouter([
+    {
+      path: "/",
+      element: <Info />
+    },
+    {
+      path: "/AboutMe",
+      element: <AboutMe />
+    },
+    {
+      path: "/Projects",
+      element: <Projects/ >
+    }
+  ]);
 
 const RoutesTree = () => {
     return(
-        <Router>
-            <Routes>
-                <Route path ="/Info" element = {<Info />}/>
-                <Route path ="/Projects" element = {<Projects />}/>
-                <Route path ="/AboutMe" element = {<AboutMe />}/>  
-            </Routes>
-        </Router>
+        <RouterProvider router = {router}/>
+
     );
 };
 export default RoutesTree;
