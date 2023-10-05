@@ -9,17 +9,17 @@ export const info = {
         { 
           index: 1,
           text: "home", 
-          link: "https://jordinky.github.io/react_porttfolio/Info",
+          link: "./Info",
         }, 
         { 
           index: 2,
           text: "about me", 
-          link: "https://jordinky.github.io/react_porttfolio/AboutMe",
+          link: "./AboutMe",
         }, 
         { 
           index: 3,
           text: "projects", 
-          link: "https://jordinky.github.io/react_porttfolio/Projects",
+          link: "./Projects",
         },       
     ],
     projectInfo :[
