@@ -1,5 +1,4 @@
 import React from "react";
-import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import Info from "./components/Info";
 import AboutMe from "./components/AboutMe";
