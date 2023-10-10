@@ -11,7 +11,7 @@ const Projects = () => {
   
   return (
     <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 8, md: 12 }}>
-      {info.projectInfo.map(({img, text,description,index}) =>(
+      {info.projectInfo.map(({img, text,description,index,weblink,githublink}) =>(
         <Grid item xs={2} sm={4} md={4} key={index}>
           <Card sx={{ minWidth: 350 ,background: "none", m:2, marginTop: 15, boxShadow: "#E2FCEF"}}>
             <CardMedia
@@ -28,8 +28,8 @@ const Projects = () => {
               <p>{description}</p>
             </CardContent>
             <CardActions>
-              <Button size="small" >Link</Button>
-              <Button size="small" >Github</Button>
+              <Button size="small" a href = {weblink}>Link</Button>
+              <Button size="small" a href = {githublink}>Github</Button>
             </CardActions>
           </Card>
         </Grid>
