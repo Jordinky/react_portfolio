@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://Jordinky.github.io/react_porttfolio/#Info",
+  "homepage": "https://Jordinky.github.io/react_portfolio/#Info",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
