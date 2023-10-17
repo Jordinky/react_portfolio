@@ -7,7 +7,7 @@ import RoutesTree from "./components/RoutesTree";
 function App() {
   return (
     <main>   
-      <Grid container direction="column" alignItems="center"  >
+      <Grid container direction="column" alignContent="center" sx={{maxHeight: "100vh", minHeight: "100vh"}}>
         <Grid item>
           <Navbar/>
         </Grid>

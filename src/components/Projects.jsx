@@ -13,14 +13,14 @@ const Projects = () => {
     <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 8, md: 12 }}>
       {info.projectInfo.map(({img, text,description,index,weblink,githublink}) =>(
         <Grid item xs={2} sm={4} md={4} key={index}>
-          <Card sx={{ minWidth: 350 ,background: "none", m:2, marginTop: 15, boxShadow: "#E2FCEF"}}>
+          <Card sx={{ minWidth: 200 ,backgroundColor: "#0d0026", marginTop: "20vh", boxShadow: "#E2FCEF", p:1,marginLeft:1,marginRight:1}}>
             <CardMedia
             component = "img"
             image =  {img}
             title= {text}
             sx={{
-               minHeight: 350,
-               minWidth: 350,
+               minHeight: 200,
+               minWidth: 200,
               }}  
             />
             <CardContent sx = {{color: "#E2FCEF"}}>

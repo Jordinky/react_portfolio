@@ -20,10 +20,11 @@ const Info = () => {
         <Grid container
           justifyContent="center"
           alignItems="center"
-          sx={{minHeight: "85vh",marginLeft: 8}}>
+          position = "static"
+          sx={{maxHeight: "100vh", minHeight: "100vh",marginLeft: 3}}>
             <Grid item sx={{marginRight: 8}}>
                 <Avatar src = {Profile} alt = "profile picture"
-                    sx={{ width: 330, height: 330, border: "#E2FCEF solid 0.1em" }}/>
+                    sx={{ minWidth: "45vh", height: "45vh", border: "#E2FCEF solid 0.1em" }}/>
             </Grid>
             <Grid item>
               <Grid item >

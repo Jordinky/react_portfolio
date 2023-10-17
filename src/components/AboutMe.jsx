@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import Typed from "typed.js";
 import React from "react";
-
+import { Container } from "@mui/material";
 const AboutMe = ()=> {
     // Create reference to store the DOM element containing the animation
     const el = React.useRef(null);
@@ -19,19 +19,25 @@ const AboutMe = ()=> {
     }, []);
 
     return(
+        <Container container spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 8, md: 12 }}>
         <Box
             borderRadius={2}
+
             sx = {{
-                marginTop: 17,
-                p: 5,
-                width: 700,
-                height: 450,
-                minWidth: 400,
+                marginTop: "20vh",
+                p:3,
+                marginLeft:1,
+                marginRight:1,
+                minHeight: "55vh",
+                maxHeight: "55vh",
+                minWidth: "60vh",
                 border: "1px solid #E2FCEF",
                 backgroundColor: "#0d0026",    
             }}>
             <span ref ={el} ></span>
         </Box>
+        </Container>
+
     );
 };
 export default AboutMe;

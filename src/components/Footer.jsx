@@ -13,7 +13,6 @@ const LabelBottomNavigation = () => {
   };
 
   return (
-
       <BottomNavigation
         value={value} 
         onChange={handleChange}
