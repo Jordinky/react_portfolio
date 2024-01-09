@@ -1,49 +1,63 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-body{
+/* Import fonts */
+/* Your font imports here */
+
+/* General styles */
+/* General styles */
+/* General styles */
+body {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.2em;
-	background: linear-gradient(-45deg, #0d0026, #13082e, #190e36, #22113f, #2b1447, #35174f, #3f1957, #4a1b5f, #561d66, #611e6d, #6d1f74, #7a207a);	
+	font-size: 1.4em; /* Increased default font size */
+	background: linear-gradient(-45deg, #0d0026, #13082e, #190e36, #22113f, #2b1447, #35174f, #3f1957, #4a1b5f, #561d66, #611e6d, #6d1f74, #7a207a);
 	height: 100%;
 	color: #E2FCEF;
 	overflow-x: hidden;
-}
-.spanRgb {
+  }
+  
+  .spanRgb {
 	font-family: "Press Start 2P";
-	font-size: 1em;
+	font-size: 1.2em; /* Increased font size for .spanRgb */
 	animation: color-change 10s infinite;
-}
-.spanSkills {
+  }
+  
+  .spanSkills {
 	font-family: "Press Start 2P";
-	font-size: 1.2em;
-}
-@keyframes color-change {
+	font-size: 1.4em; /* Increased font size for .spanSkills */
+  }
+  
+  @keyframes color-change {
 	0% { color: green; }
 	25% { color: blue; }
 	50% { color: red; }
 	75% { color: blue; }
 	100% { color: green; }
-}
-@keyframes gradient {
+  }
+  
+  @keyframes gradient {
 	0% {
-		background-position: 0% 50%;
+	  background-position: 0% 50%;
 	}
 	50% {
-		background-position: 100% 50%;
+	  background-position: 100% 50%;
 	}
 	100% {
-		background-position: 0% 50%;
+	  background-position: 0% 50%;
 	}
-}
-
-.navLinks {
+  }
+  
+  /* Navigation links */
+  .navLinks {
 	letter-spacing: 0.15em;
-	padding: 15px 20px;
+	padding: 20px 25px; /* Increased padding for better touch interaction */
 	position: relative;
   }
-.navLinks:after {    
+  
+  .navLinks:after {
 	background: none repeat scroll 0 0 transparent;
 	bottom: 0;
 	content: "";
@@ -55,7 +69,31 @@ body{
 	transition: width 0.3s ease 0s, left 0.3s ease 0s;
 	width: 0;
   }
-.navLinks:hover:after { 
-	width: 100%; 
-	left: 0; 
+  
+  .navLinks:hover:after {
+	width: 100%;
+	left: 0;
+  }
+  
+  /* Media Queries */
+  /* Mobile-first approach */
+  @media only screen and (min-width: 768px) {
+	body {
+	  font-size: 1.2em; /* Adjusted font size for larger screens */
+	}
+  
+	.spanRgb {
+	  font-size: 1em; /* Adjusted font size for larger screens */
+	}
+  
+	.spanSkills {
+	  font-size: 1.2em; /* Adjusted font size for larger screens */
+	}
+  
+	/* Adjust other elements for larger screens */
+	.navLinks {
+	  padding: 15px 20px; /* Adjusted padding for larger screens */
+	}
+  
+	/* Add more specific styles for larger screens */
   }
