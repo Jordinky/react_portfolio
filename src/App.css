@@ -27,7 +27,7 @@ body {
   
   .spanSkills {
 	font-family: "Press Start 2P";
-	font-size: 1.4em; /* Increased font size for .spanSkills */
+	font-size: 1em; /* Increased font size for .spanSkills */
   }
   
   @keyframes color-change {

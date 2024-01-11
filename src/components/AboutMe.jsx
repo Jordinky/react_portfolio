@@ -24,16 +24,19 @@ const AboutMe = () => {
       <Box
         borderRadius={2}
         sx={{
-          marginTop: { xs: "10vh", sm: "15vh", md: "20vh" },
+          marginTop: { xs: "10vh", sm: "15vh", md: "20vh" }, // Adjusted marginTop for different screen sizes
           p: 3,
-          marginLeft: "auto",
-          marginRight: "auto",
-          width: 400, // Fixed width of 400px
-          height: 450, // Fixed height of 300px
+          marginLeft: 1,
+          marginRight: 1,
+          minHeight: "45vh", // Adjusted minHeight for responsiveness
+          maxHeight: "55vh",
+          minWidth: "45vh", // Adjusted minHeight for responsiveness
+          maxWidth: "55vh",
+          width: "90%", // Adjusted width for responsiveness
           border: "1px solid #E2FCEF",
           backgroundColor: "#0d0026",
           display: "flex",
-          overflowY: "auto",
+          overflow: "hidden",
         }}
       >
         <span ref={el}></span>
