@@ -13,7 +13,7 @@ const Projects = () => {
     <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 8, md: 12 }}>
       {info.projectInfo.map(({img, text,description,index,weblink,githublink}) =>(
         <Grid item xs={2} sm={4} md={4} key={index}>
-          <Card sx={{ minWidth: 200 ,backgroundColor: "#0d0026", marginTop: "20vh", boxShadow: "#E2FCEF", p:1,marginLeft:1,marginRight:1}}>
+          <Card sx={{ minWidth: 200 ,backgroundColor: "#99D5C9", marginTop: "20vh", boxShadow: "#E2FCEF", p:1,marginLeft:1,marginRight:1}}>
             <CardMedia
             component = "img"
             image =  {img}
@@ -23,13 +23,13 @@ const Projects = () => {
                minWidth: 200,
               }}  
             />
-            <CardContent sx = {{color: "#E2FCEF"}}>
+            <CardContent sx = {{color: "#6C969D"}}>
               <p>{text}</p>
               <p>{description}</p>
             </CardContent>
             <CardActions>
-              <Button size="small" a href = {weblink}>Link</Button>
-              <Button size="small" a href = {githublink}>Github</Button>
+              <Button size="small" a href = {weblink} sx ={{color: "#99D5C9", backgroundColor: "#6C969D"}}>Link</Button>
+              <Button size="small" a href = {githublink} sx ={{color: "#99D5C9", backgroundColor: "#6C969D"}}>Github</Button>
             </CardActions>
           </Card>
         </Grid>

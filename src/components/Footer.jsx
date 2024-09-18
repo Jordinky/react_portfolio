@@ -34,6 +34,7 @@ const LabelBottomNavigation = () => {
           href = 'https://www.instagram.com/guacamole_lover/?next=%2F'
           icon={<InstagramIcon />}
           label = "instagram"
+          sx={{backgroundColor: "#6C969D"}}
         />
         <BottomNavigationAction
           value="github"

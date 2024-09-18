@@ -59,10 +59,10 @@ const Navbar = () => {
                   <MenuItem key={index} onClick={handleCloseNavMenu} href = {link}>
                     <Link  
                         key = {index}
-                        href = {link}
                         textAlign="center"
                         sx = {{textDecoration: "none"}}
                         >{text}</Link>
+                        
                   </MenuItem>
                 ))}
               </Menu>
@@ -75,7 +75,7 @@ const Navbar = () => {
                 key = {index}
                 href = {link}
                 sx={{
-                    color: "#E2FCEF",
+                    color: "#6C969D",
                     margin: 5,
                     textDecoration: "none",
                 }}  

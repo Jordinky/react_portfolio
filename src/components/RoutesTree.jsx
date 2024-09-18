@@ -1,20 +1,20 @@
 import React from "react";
-import { createHashRouter, RouterProvider } from "react-router-dom";
-import Info from "./Info";
-import AboutMe from "./AboutMe";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./Home";
+import Skills from "./Skills";
 import Projects from "./Projects";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
     {
-      path: "/Info",
-      element: <Info />
+      path: "/home",
+      element: <Home />
     },
     {
-      path: "/AboutMe",
-      element: <AboutMe />
+      path: "/skills",
+      element: <Skills />
     },
     {
-      path: "/Projects",
+      path: "/projects",
       element: <Projects />
     }
   ]);

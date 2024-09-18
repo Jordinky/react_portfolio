@@ -2,7 +2,7 @@ import Avatar from "@mui/material/Avatar";
 import Grid from "@mui/material/Grid";
 import Typed from "typed.js";
 import React from "react";
-import Profile from "../img/profile.jpeg";
+import Profile from "../img/profile.webp";
 
 const Info = () => {
     const el = React.useRef(null);

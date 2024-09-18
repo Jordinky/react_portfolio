@@ -9,17 +9,17 @@ export const info = {
         { 
           index: 1,
           text: "home", 
-          link: "#Info",
+          link: "/home",
         }, 
         { 
           index: 2,
-          text: "about me", 
-          link: "#AboutMe",
+          text: "skills", 
+          link: "/skills",
         }, 
         { 
           index: 3,
           text: "projects", 
-          link: "#Projects",
+          link: "/projects",
         },       
     ],
     projectInfo :[

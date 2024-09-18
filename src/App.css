@@ -13,9 +13,8 @@ body {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.4em; /* Increased default font size */
-	background: linear-gradient(-45deg, #0d0026, #13082e, #190e36, #22113f, #2b1447, #35174f, #3f1957, #4a1b5f, #561d66, #611e6d, #6d1f74, #7a207a);
-	height: 100%;
-	color: #E2FCEF;
+	background:linear-gradient(0deg, rgba(108,150,157,1) 0%, rgba(153,213,201,1) 100%);	height: 100%;
+	color: #6C969D;
 	overflow-x: hidden;
   }
   
@@ -65,7 +64,7 @@ body {
 	height: 2px;
 	left: 50%;
 	position: absolute;
-	background: #E2FCEF;
+	background: #6C969D;
 	transition: width 0.3s ease 0s, left 0.3s ease 0s;
 	width: 0;
   }
@@ -75,19 +74,60 @@ body {
 	left: 0;
   }
   
+
+/*mac style buttons*/
+#yellow {
+    background-color: #f0f000;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+	margin: 0.3vh;
+}
+
+#green {
+    background-color: #1AAF5C;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+	margin: 0.3vh;
+	
+}
+
+#red {
+    background-color: #E94B35;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+	margin: 0.3vh;
+
+}
+#screen {
+    background-color: #33485E;
+    width: 750px;
+    height: 450px;
+    border-radius: 2%;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+
+
+
+
+
   /* Media Queries */
   /* Mobile-first approach */
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 768px) {
 	body {
-	  font-size: 1.2em; /* Adjusted font size for larger screens */
+	  font-size: 2vh; /* Adjusted font size for larger screens */
 	}
   
 	.spanRgb {
-	  font-size: 1em; /* Adjusted font size for larger screens */
+	  font-size: 2vh; /* Adjusted font size for larger screens */
 	}
   
 	.spanSkills {
-	  font-size: 1.2em; /* Adjusted font size for larger screens */
+	  font-size: 2vh; /* Adjusted font size for larger screens */
 	}
   
 	/* Adjust other elements for larger screens */
