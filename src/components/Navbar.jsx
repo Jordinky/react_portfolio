@@ -23,7 +23,7 @@ const Navbar = () => {
     };
   
     return (
-      <AppBar position="fixed" sx = {{background: "none", maxHeight: 100, boxShadow: "none"}}>
+      <AppBar position="fixed" sx = {{background: "none", maxHeight: "5vh", boxShadow: "none"}}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -75,9 +75,10 @@ const Navbar = () => {
                 key = {index}
                 href = {link}
                 sx={{
-                    color: "#6C969D",
+                    color: "#ff088c",
                     margin: 5,
                     textDecoration: "none",
+                    textShadow: "#ff088c 1px 0 10px"
                 }}  
                 >
                   {text}

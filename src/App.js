@@ -1,22 +1,30 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import SocialMediaIcons from "./components/SocialMediaIcons";
 import Grid from "@mui/material/Grid";
 import RoutesTree from "./components/RoutesTree";
+import { Box } from "@mui/material";
 
 function App() {
   return (
     <main>   
-      <Grid container direction="column" alignContent="center" sx={{maxHeight: "100vh", minHeight: "100vh"}}>
+      <Grid container direction="column" >    
         <Grid item>
           <Navbar/>
         </Grid>
-        <Grid item>
+        <Grid>
+          <div class="environment"></div>
+        <Box sx={{ display: 'flex', justifyContent: 'center', }}>
           <RoutesTree/>
+          <SocialMediaIcons/>
+        </Box>
+          <Grid item> 
+            
+          </Grid>
         </Grid>
-        <Grid item>
-          <Footer/>
-        </Grid>
+
+          
+
       </Grid>
     </main>
   );

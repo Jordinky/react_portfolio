@@ -12,8 +12,9 @@ const AboutMe = () => {
       strings: [
         "C:&Backslash;Users&Backslash;Jordi> cd Skills ^800 <br/>  C:&Backslash;Users&Backslash;Jordi&Backslash;Skills> ls ^800 <br/><br/>Javascript<br/>React<br/>Css<br/>Python<br/>Django<br/>Java<br/>NodeJS<br/>GIT<br/>Github<br/>Mysql<br/>Redis<br/><br/>C:&Backslash;Users&Backslash;Jordi&Backslash;Skills>",
       ],
-      typeSpeed: 1,
+      typeSpeed: 10, showCursor: false,
     });
+
     return () => {
       typed.destroy();
     };
@@ -21,7 +22,7 @@ const AboutMe = () => {
 
   return (
     <>
-    <Grid Container sx = {{marginTop: { xs: "10vh", sm: "15vh", md: "20vh" }, minWidth: "50vw", maxWidth: "50vw"}}>
+    <Grid Container position = "relative" sx = {{marginTop: { xs: "10vh", sm: "15vh", md: "20vh" }, minWidth: "50vw", maxWidth: "50vw"}}>
       <Grid container
         direction="row"
         sx={{
@@ -38,7 +39,7 @@ const AboutMe = () => {
         <Container
           sx={{
             paddingTop: 3 ,
-            minHeight: "55vh", // Adjusted minHeight for responsiveness
+            minHeight: "55vh",
             maxHeight: "55vh",
             backgroundColor: "#33485E",
             display: "flex",

@@ -1,6 +1,6 @@
 import Portfolio from "../src/img/mock1.jpg";
 import Pokedex from "../src/img/mock2.jpg";
-import NOCE from "../src/img/mock3.jpg";
+
 
 
 export const info = {
@@ -20,7 +20,7 @@ export const info = {
           index: 3,
           text: "projects", 
           link: "/projects",
-        },       
+        }     
     ],
     projectInfo :[
         {
@@ -40,11 +40,18 @@ export const info = {
         },
         {
           index: 13,
-          img: NOCE,
-          text: "NBA api",
+          img: "",
+          text: "Dice game",
           description: "WIP - data fetch from the nba api with filter",
           link: "https://react.dev/learn/react-developer-tools#browser-extension" ,
         },
+        {
+          index: 14,
+          img: "NOCE",
+          text: "Chat Application",
+          description: "WIP - data fetch from the nba api with filter",
+          link: "https://react.dev/learn/react-developer-tools#browser-extension" ,
+        }
       ],
 
 

@@ -4,6 +4,7 @@ import Home from "./Home";
 import Skills from "./Skills";
 import Projects from "./Projects";
 
+
 const router = createBrowserRouter([
     {
       path: "/home",
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       path: "/projects",
       element: <Projects />
     }
+    
   ]);
 
 const RoutesTree = () => {

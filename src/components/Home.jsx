@@ -1,43 +1,23 @@
-import Avatar from "@mui/material/Avatar";
 import Grid from "@mui/material/Grid";
-import Typed from "typed.js";
-import React from "react";
-import Profile from "../img/profile.webp";
-
+import Box from "@mui/material/Box";
 const Info = () => {
-    const el = React.useRef(null);
-    React.useEffect(() => {
-    const typed = new Typed(el.current, {
-        strings: ["&lt;DevName value = &lsquo;Jordi Pelaez Calderini&lsquo;/&gt;"],
-        typeSpeed: 25,
-      });
-
-      return () => {
-        typed.destroy();
-      };
-    }, []);
     return(
-        <Grid container
-          justifyContent="center"
-          alignItems="center"
-          position = "static"
-          sx={{maxHeight: "100vh", minHeight: "100vh",marginLeft: 3}}>
-            <Grid item sx={{marginRight: 8}}>
-                <Avatar src = {Profile} alt = "profile picture"
-                    sx={{ minWidth: "45vh", height: "45vh", border: "#E2FCEF solid 0.1em" }}/>
-            </Grid>
-            <Grid item>
-              <Grid item >
-                <span className = "spanRgb" ref = {el}></span>
-              </Grid>
-              <Grid item>
-                <p>Front-end developer ⌨️ </p>
-                <p>Based in Barcelona 🏠</p>
-                <p>Looking for a job 🧑‍💼</p>
-                <p>Jordipelaez05@gmail.com 📧</p>
-              </Grid>
-            </Grid>
-        </Grid> 
+      <Grid container direction="column" alignContent="center" sx = {{marginTop: { xs: "12vh", sm: "15vh", md: "22vh" }}}>
+          <Grid item >
+              <p class="hero glitch" data-text="Jordi Pelaez Calderini"><span>Jordi Pelaez Calderini</span></p>
+              <p class="hero glitch" data-text="Fullstack Developer"><span>Fullstack Developer</span></p>    
+          </Grid>
+          <Grid item>
+            <Box sx={{justifyContent: 'flex-end' }}>
+              <button className="button">
+                <span class="actual-text">&nbsp;Download&nbsp;my&nbsp;cv</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;Download&nbsp;my&nbsp;cv</span>
+              </button>
+            </Box>
+
+          </Grid>
+
+      </Grid>
     );
 };
 export default Info;
