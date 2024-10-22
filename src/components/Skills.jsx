@@ -12,9 +12,8 @@ const AboutMe = () => {
       strings: [
         "C:&Backslash;Users&Backslash;Jordi> cd Skills ^800 <br/>  C:&Backslash;Users&Backslash;Jordi&Backslash;Skills> ls ^800 <br/><br/>Javascript<br/>React<br/>Css<br/>Python<br/>Django<br/>Java<br/>NodeJS<br/>GIT<br/>Github<br/>Mysql<br/>Redis<br/><br/>C:&Backslash;Users&Backslash;Jordi&Backslash;Skills>",
       ],
-      typeSpeed: 10,
+      typeSpeed: 1,
     });
-
     return () => {
       typed.destroy();
     };

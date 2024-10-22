@@ -9,7 +9,7 @@ const Info = () => {
     React.useEffect(() => {
     const typed = new Typed(el.current, {
         strings: ["&lt;DevName value = &lsquo;Jordi Pelaez Calderini&lsquo;/&gt;"],
-        typeSpeed: 30,
+        typeSpeed: 25,
       });
 
       return () => {
