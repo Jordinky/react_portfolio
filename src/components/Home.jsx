@@ -12,7 +12,7 @@ const Info = () => {
           </Grid>
           <Grid item>
             <Box sx={{justifyContent: 'flex-end' }}>
-              <a className="button" href ="https://drive.google.com/file/d/1uaE_CE9_srWnhDvrvOn_UodcLUDmgYU5/view?usp=drive_link">
+              <a className="button" href ="https://drive.google.com/file/d/1KHaR1Egi4RRWmlWFX4eDbUjLusrrYJNU/view?usp=sharing">
                 <span class="actual-text">&nbsp;Check&nbsp;my&nbsp;cv</span>
                 <span aria-hidden="true" class="hover-text">&nbsp;Check&nbsp;my&nbsp;cv</span>
               </a>
