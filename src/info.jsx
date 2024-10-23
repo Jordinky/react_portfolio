@@ -1,7 +1,6 @@
-import Portfolio from "../src/img/mock1.jpg";
-import Pokedex from "../src/img/mock2.jpg";
-
-
+import chatImg from '../src/img/chat.webp'
+import diceImg from '../src/img/dice.jpg'
+import portfolioImg from '../src/img/portfolio.png'
 
 export const info = {
 
@@ -25,32 +24,25 @@ export const info = {
     projectInfo :[
         {
           index: 11,
-          img: Portfolio,
+          img: portfolioImg,
           text: "Portfolio",
           description: "Made with create-react-app and Mui",
           weblink: "https://jordinky.github.io/react_portfolio/#Info",
           githublink: "https://github.com/Jordinky/react_portfolio",
         },
         {
-          index: 12,
-          img: Pokedex,
-          text: "Pokedex",
-          description: "Pokedex from the pokemon anime, made with django and css3",
-          githublink: "https://github.com/Jordinky/pokedex",
-        },
-        {
           index: 13,
-          img: "",
+          img: diceImg,
           text: "Dice game",
-          description: "WIP - data fetch from the nba api with filter",
-          link: "https://react.dev/learn/react-developer-tools#browser-extension" ,
+          description: "Dice game made with React, Nodejs, Docker and MySql for a class exercise, made along with a partner.",
+          link: "https://github.com/ghOdisea/dice-game-docker" ,
         },
         {
           index: 14,
-          img: "NOCE",
+          img: chatImg,
           text: "Chat Application",
-          description: "WIP - data fetch from the nba api with filter",
-          link: "https://react.dev/learn/react-developer-tools#browser-extension" ,
+          description: "Chat application made for a final project from a bootcamp, this application was made with React,Nodejs and socket.io and MongoDB",
+          link: "https://github.com/Jordinky/Sprint7" ,
         }
       ],
 
