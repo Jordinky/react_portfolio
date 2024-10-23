@@ -35,14 +35,14 @@ export const info = {
           img: diceImg,
           text: "Dice game",
           description: "Dice game made with React, Nodejs, Docker and MySql for a class exercise, made along with a partner.",
-          link: "https://github.com/ghOdisea/dice-game-docker" ,
+          githublink: "https://github.com/ghOdisea/dice-game-docker" ,
         },
         {
           index: 14,
           img: chatImg,
           text: "Chat Application",
           description: "Chat application made for a final project from a bootcamp, this application was made with React,Nodejs and socket.io and MongoDB",
-          link: "https://github.com/Jordinky/Sprint7" ,
+          githublink: "https://github.com/Jordinky/Sprint7" ,
         }
       ],
 
