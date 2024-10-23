@@ -601,7 +601,7 @@ right: 0;
 bottom: 0;
 opacity: 0.5;
 filter: blur(5px);
-background: url(C:\Users\Jordi\react_portfolio\src\img\4355b7fb-0ac5-49ee-94f9-00cc37fab618.webp)
+background: url(src\img\4355b7fb-0ac5-49ee-94f9-00cc37fab618.webp)
 	center no-repeat;
 background-size: cover;
 }
