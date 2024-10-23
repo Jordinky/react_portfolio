@@ -6,7 +6,6 @@ import Container from "@mui/material/Container";
 
 const AboutMe = () => {
   const el = React.useRef(null);
-
   React.useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
@@ -49,9 +48,7 @@ const AboutMe = () => {
             <span ref={el}></span>
           </Container>
       </Grid>
-      
     </Grid>
-
     </>
   );
 };

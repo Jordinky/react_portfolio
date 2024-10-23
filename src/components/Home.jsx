@@ -1,6 +1,9 @@
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
+
 const Info = () => {
+  
+
     return(
       <Grid container direction="column" alignContent="center" sx = {{marginTop: { xs: "12vh", sm: "15vh", md: "22vh" }}}>
           <Grid item >
@@ -9,10 +12,10 @@ const Info = () => {
           </Grid>
           <Grid item>
             <Box sx={{justifyContent: 'flex-end' }}>
-              <button className="button">
-                <span class="actual-text">&nbsp;Download&nbsp;my&nbsp;cv</span>
-                <span aria-hidden="true" class="hover-text">&nbsp;Download&nbsp;my&nbsp;cv</span>
-              </button>
+              <a className="button" href ="https://drive.google.com/file/d/1uaE_CE9_srWnhDvrvOn_UodcLUDmgYU5/view?usp=drive_link">
+                <span class="actual-text">&nbsp;Check&nbsp;my&nbsp;cv</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;Check&nbsp;my&nbsp;cv</span>
+              </a>
             </Box>
 
           </Grid>
