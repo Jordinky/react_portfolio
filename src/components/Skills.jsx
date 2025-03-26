@@ -26,7 +26,7 @@ const AboutMe = () => {
         direction="row"
         sx={{
           p:0.5,
-          backgroundColor: "#DAD9D9",
+          backgroundColor: "#846A6A",
           borderRadius: 1,
           maxWidth: "50vw",
         }}>
@@ -38,14 +38,15 @@ const AboutMe = () => {
         <Container
           sx={{
             paddingTop: 3 ,
-            minHeight: "55vh",
-            maxHeight: "55vh",
-            backgroundColor: "#33485E",
+            paddingBottom:3,
+            minHeight: "50vh",
+            
+            backgroundColor: "#353B3C",
             display: "flex",
             borderRadius: 1
           }}
           >
-            <span ref={el}></span>
+            <span class ="skills"ref={el}></span>
           </Container>
       </Grid>
     </Grid>

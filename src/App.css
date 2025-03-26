@@ -1,30 +1,16 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-
-
-/* Import fonts */
-/* Your font imports here */
-
-/* General styles */
-/* General styles */
+@import url('https://fonts.cdnfonts.com/css/dot-matrix');
+              
 /* General styles */
 body {
-	color: #ccc;
-	background: #111;
-	font-family: 'Roboto', sans-serif;
+	background: #EEF0F2;
+	font-family: 'Dot Matrix', sans-serif;            
 	font-size: 1.4em; /* Increased default font size */
   }
   
-  .spanSkills {
-	font-family: "Press Start 2P";
-	letter-spacing: 0.15em;
-	font-size: 1em; /* Increased font size for .spanSkills */
+  .skills {
+	font-size: 1em; 
+	color:#A2999E;/* Increased font size for .spanSkills */
   }
   
   /* Navigation links */
@@ -42,9 +28,9 @@ body {
 	height: 2px;
 	left: 50%;
 	position: absolute;
-	background: #ff088c;
+	background: #353B3C;
 	transition: width 0.3s ease 0s, left 0.3s ease 0s;
-	box-shadow: #ff088c 1px 0 10px;
+	box-shadow: #353B3C 1px 0 3px;
 	width: 0;
   }
   
@@ -53,7 +39,11 @@ body {
 	left: 0;
   }
   
-
+  .card_content{
+	height: 2em;
+	color:#A2999E;
+	
+  }
 /*mac style buttons*/
 #yellow {
     background-color: #f0f000;
@@ -123,487 +113,99 @@ a {
 color: #ccc;
 }
 
-p {
+.glitch{
 
-letter-spacing: 3px;
-text-decoration: none;
-font-size: 8vh;
-font-family: "Audiowide", sans-serif;
-font-style: italic;
-position: relative;
-background-color: #FF0800;
-text-transform: uppercase;
-color: rgb(255, 203, 203);
-padding: 3px;
-
-}
-
-.layers {
-position: relative;
-}
-
-.layers::before,
-.layers::after {
-content: attr(data-text);
-position: absolute;
-width: 110%;
-z-index: -1;
-}
-
-.layers::before {
-top: 10px;
-left: 15px;
-color: #e0287d;
-}
-
-.layers::after {
-top: 5px;
-left: -10px;
-color: #1bc7fb;
-}
-
-.single-path {
-clip-path: polygon(
-	0% 12%,
-	53% 12%,
-	53% 26%,
-	25% 26%,
-	25% 86%,
-	31% 86%,
-	31% 0%,
-	53% 0%,
-	53% 84%,
-	92% 84%,
-	92% 82%,
-	70% 82%,
-	70% 29%,
-	78% 29%,
-	78% 65%,
-	69% 65%,
-	69% 66%,
-	77% 66%,
-	77% 45%,
-	85% 45%,
-	85% 26%,
-	97% 26%,
-	97% 28%,
-	84% 28%,
-	84% 34%,
-	54% 34%,
-	54% 89%,
-	30% 89%,
-	30% 58%,
-	83% 58%,
-	83% 5%,
-	68% 5%,
-	68% 36%,
-	62% 36%,
-	62% 1%,
-	12% 1%,
-	12% 34%,
-	60% 34%,
-	60% 57%,
-	98% 57%,
-	98% 83%,
-	1% 83%,
-	1% 53%,
-	91% 53%,
-	91% 84%,
-	8% 84%,
-	8% 83%,
-	4% 83%
-);
-}
-
-.paths {
-animation: paths 5s step-end infinite;
-}
-
-@keyframes paths {
-0% {
-	clip-path: polygon(
-	0% 43%,
-	83% 43%,
-	83% 22%,
-	23% 22%,
-	23% 24%,
-	91% 24%,
-	91% 26%,
-	18% 26%,
-	18% 83%,
-	29% 83%,
-	29% 17%,
-	41% 17%,
-	41% 39%,
-	18% 39%,
-	18% 82%,
-	54% 82%,
-	54% 88%,
-	19% 88%,
-	19% 4%,
-	39% 4%,
-	39% 14%,
-	76% 14%,
-	76% 52%,
-	23% 52%,
-	23% 35%,
-	19% 35%,
-	19% 8%,
-	36% 8%,
-	36% 31%,
-	73% 31%,
-	73% 16%,
-	1% 16%,
-	1% 56%,
-	50% 56%,
-	50% 8%
-	);
-}
-
-5% {
-	clip-path: polygon(
-	0% 29%,
-	44% 29%,
-	44% 83%,
-	94% 83%,
-	94% 56%,
-	11% 56%,
-	11% 64%,
-	94% 64%,
-	94% 70%,
-	88% 70%,
-	88% 32%,
-	18% 32%,
-	18% 96%,
-	10% 96%,
-	10% 62%,
-	9% 62%,
-	9% 84%,
-	68% 84%,
-	68% 50%,
-	52% 50%,
-	52% 55%,
-	35% 55%,
-	35% 87%,
-	25% 87%,
-	25% 39%,
-	15% 39%,
-	15% 88%,
-	52% 88%
-	);
-}
-
-30% {
-	clip-path: polygon(
-	0% 53%,
-	93% 53%,
-	93% 62%,
-	68% 62%,
-	68% 37%,
-	97% 37%,
-	97% 89%,
-	13% 89%,
-	13% 45%,
-	51% 45%,
-	51% 88%,
-	17% 88%,
-	17% 54%,
-	81% 54%,
-	81% 75%,
-	79% 75%,
-	79% 76%,
-	38% 76%,
-	38% 28%,
-	61% 28%,
-	61% 12%,
-	55% 12%,
-	55% 62%,
-	68% 62%,
-	68% 51%,
-	0% 51%,
-	0% 92%,
-	63% 92%,
-	63% 4%,
-	65% 4%
-	);
-}
-
-45% {
-	clip-path: polygon(
-	0% 33%,
-	2% 33%,
-	2% 69%,
-	58% 69%,
-	58% 94%,
-	55% 94%,
-	55% 25%,
-	33% 25%,
-	33% 85%,
-	16% 85%,
-	16% 19%,
-	5% 19%,
-	5% 20%,
-	79% 20%,
-	79% 96%,
-	93% 96%,
-	93% 50%,
-	5% 50%,
-	5% 74%,
-	55% 74%,
-	55% 57%,
-	96% 57%,
-	96% 59%,
-	87% 59%,
-	87% 65%,
-	82% 65%,
-	82% 39%,
-	63% 39%,
-	63% 92%,
-	4% 92%,
-	4% 36%,
-	24% 36%,
-	24% 70%,
-	1% 70%,
-	1% 43%,
-	15% 43%,
-	15% 28%,
-	23% 28%,
-	23% 71%,
-	90% 71%,
-	90% 86%,
-	97% 86%,
-	97% 1%,
-	60% 1%,
-	60% 67%,
-	71% 67%,
-	71% 91%,
-	17% 91%,
-	17% 14%,
-	39% 14%,
-	39% 30%,
-	58% 30%,
-	58% 11%,
-	52% 11%,
-	52% 83%,
-	68% 83%
-	);
-}
-
-76% {
-	clip-path: polygon(
-	0% 26%,
-	15% 26%,
-	15% 73%,
-	72% 73%,
-	72% 70%,
-	77% 70%,
-	77% 75%,
-	8% 75%,
-	8% 42%,
-	4% 42%,
-	4% 61%,
-	17% 61%,
-	17% 12%,
-	26% 12%,
-	26% 63%,
-	73% 63%,
-	73% 43%,
-	90% 43%,
-	90% 67%,
-	50% 67%,
-	50% 41%,
-	42% 41%,
-	42% 46%,
-	50% 46%,
-	50% 84%,
-	96% 84%,
-	96% 78%,
-	49% 78%,
-	49% 25%,
-	63% 25%,
-	63% 14%
-	);
-}
-
-90% {
-	clip-path: polygon(
-	0% 41%,
-	13% 41%,
-	13% 6%,
-	87% 6%,
-	87% 93%,
-	10% 93%,
-	10% 13%,
-	89% 13%,
-	89% 6%,
-	3% 6%,
-	3% 8%,
-	16% 8%,
-	16% 79%,
-	0% 79%,
-	0% 99%,
-	92% 99%,
-	92% 90%,
-	5% 90%,
-	5% 60%,
-	0% 60%,
-	0% 48%,
-	89% 48%,
-	89% 13%,
-	80% 13%,
-	80% 43%,
-	95% 43%,
-	95% 19%,
-	80% 19%,
-	80% 85%,
-	38% 85%,
-	38% 62%
-	);
-}
-
-1%,
-7%,
-33%,
-47%,
-78%,
-93% {
-	clip-path: none;
-}
-}
-
-.movement {
-/* Normally this position would be absolute & on the layers, set to relative here so we can see it on the div */
-position: relative;
-animation: movement 8s step-end infinite;
-}
-
-@keyframes movement {
-0% {
-	top: 0px;
-	left: -20px;
-}
-
-15% {
-	top: 10px;
-	left: 10px;
-}
-
-60% {
-	top: 5px;
-	left: -10px;
-}
-
-75% {
-	top: -5px;
-	left: 20px;
-}
-
-100% {
-	top: 10px;
-	left: 5px;
-}
-}
-
-.opacity {
-animation: opacity 5s step-end infinite;
-}
-
-@keyframes opacity {
-0% {
-	opacity: 0.1;
-}
-
-5% {
-	opacity: 0.7;
-}
-
-30% {
-	opacity: 0.4;
-}
-
-45% {
-	opacity: 0.6;
-}
-
-76% {
-	opacity: 0.4;
-}
-
-90% {
-	opacity: 0.8;
-}
-
-1%,
-7%,
-33%,
-47%,
-78%,
-93% {
-	opacity: 0;
-}
-}
-
-.font {
-animation: font 7s step-end infinite;
-}
-
-@keyframes font {
-0% {
-	font-weight: 100;
-	color: #e0287d;
-	filter: blur(3px);
-}
-
-20% {
-	font-weight: 500;
-	color: #fff;
-	filter: blur(0);
-}
-
-50% {
-	font-weight: 300;
-	color: #1bc7fb;
-	filter: blur(2px);
-}
-
-60% {
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-size: 11vh;
 	font-weight: 700;
-	color: #fff;
-	filter: blur(0);
+	line-height: 1.2;
+	color: #353B3C;
+	letter-spacing: 5px;
+	z-index: 1;
+	animation: shift 1s ease-in-out infinite alternate;
 }
 
-90% {
-	font-weight: 500;
-	color: #e0287d;
-	filter: blur(6px);
-}
-}
-
-.glitch span {
-animation: paths 5s step-end infinite;
-}
-
-.glitch::before {
-animation: paths 5s step-end infinite, opacity 5s step-end infinite,
-	font 8s step-end infinite, movement 10s step-end infinite;
+.glitch:before,
+.glitch:after {
+  display: block;
+  content: attr(data-glitch);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
 }
 
-.glitch::after {
-animation: paths 5s step-end infinite, opacity 5s step-end infinite,
-	font 7s step-end infinite, movement 8s step-end infinite;
+.glitch:before {
+  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  color: #846A6A;
+  z-index: -1;
 }
 
-.environment {
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-opacity: 0.5;
-filter: blur(5px);
-background: url('../src/img/background_img.webp')
-	center no-repeat;
-background-size: cover;
+.glitch:after {
+  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  color: #A2999E;
+  z-index: -2;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-3px, 3px);
+  }
+
+  40% {
+    transform: translate(-3px, -3px);
+  }
+
+  60% {
+    transform: translate(3px, 3px);
+  }
+
+  80% {
+    transform: translate(3px, -3px);
+  }
+
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes shift {
+  0%, 40%, 44%, 58%, 61%, 65%, 69%, 73%, 100% {
+    transform: skewX(0deg);
+  }
+
+  41% {
+    transform: skewX(10deg);
+  }
+
+  42% {
+    transform: skewX(-10deg);
+  }
+
+  59% {
+    transform: skewX(40deg) skewY(10deg);
+  }
+
+  60% {
+    transform: skewX(-40deg) skewY(-10deg);
+  }
+
+  63% {
+    transform: skewX(10deg) skewY(-5deg);
+  }
+
+  70% {
+    transform: skewX(-50deg) skewY(-20deg);
+  }
+
+  71% {
+    transform: skewX(10deg) skewY(-10deg);
+  }
 }
   
 /* From Uiverse.io by satyamchaudharydev */ 
@@ -619,14 +221,14 @@ background-size: cover;
 
 /* button styling */
 .button {
+	font-family: 'Roboto', sans-serif;
   --border-right: 6px;
-  --text-stroke-color: rgba(255,255,255,0.6);
-  --animation-color: #37FF8B;
+  --text-stroke-color:#C6C7C4;
+  --animation-color: #A2999E;
   --fs-size: 2em;
   letter-spacing: 3px;
   text-decoration: none;
   font-size: var(--fs-size);
-  font-family: "Arial";
   position: relative;
   text-transform: uppercase;
   color: transparent;
@@ -651,108 +253,7 @@ background-size: cover;
   filter: drop-shadow(0 0 23px var(--animation-color))
 }
 
-/* projects button*/
-.git-button,.git-button::after {
-	padding: 5px 20px;
-	border: none;
-	border-radius: 5px;
-	color: white;
-	background-color: transparent;
-	position: relative;
-  }
-  
-  .git-button::after {
-	--move1: inset(50% 50% 50% 50%);
-	--move2: inset(31% 0 40% 0);
-	--move3: inset(39% 0 15% 0);
-	--move4: inset(45% 0 40% 0);
-	--move5: inset(45% 0 6% 0);
-	--move6: inset(14% 0 61% 0);
-	clip-path: var(--move1);
-	content: 'Github';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	display: block;
-  }
-  
-  .git-button:hover::after {
-	animation: glitch_4011 1s;
-	text-shadow: 10 10px 10px black;
-	animation-timing-function: steps(2, end);
-	text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
-	background-color: transparent;
-	border: 3px solid rgb(0, 255, 213);
-  }
-  
-  .git-button:hover {
-	text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
-  }
-  
-  .git-button:hover {
-	background-color: transparent;
-	border: 1px solid rgb(0, 255, 213);
-	box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
-  }
-  
-  @keyframes glitch_4011 {
-	0% {
-	  clip-path: var(--move1);
-	  transform: translate(0px,-10px);
-	}
-  
-	10% {
-	  clip-path: var(--move2);
-	  transform: translate(-10px,10px);
-	}
-  
-	20% {
-	  clip-path: var(--move3);
-	  transform: translate(10px,0px);
-	}
-  
-	30% {
-	  clip-path: var(--move4);
-	  transform: translate(-10px,10px);
-	}
-  
-	40% {
-	  clip-path: var(--move5);
-	  transform: translate(10px,-10px);
-	}
-  
-	50% {
-	  clip-path: var(--move6);
-	  transform: translate(-10px,10px);
-	}
-  
-	60% {
-	  clip-path: var(--move1);
-	  transform: translate(10px,-10px);
-	}
-  
-	70% {
-	  clip-path: var(--move3);
-	  transform: translate(-10px,10px);
-	}
-  
-	80% {
-	  clip-path: var(--move2);
-	  transform: translate(10px,-10px);
-	}
-  
-	90% {
-	  clip-path: var(--move4);
-	  transform: translate(-10px,10px);
-	}
-  
-	100% {
-	  clip-path: var(--move1);
-	  transform: translate(0);
-	}
-  }
+
   
 
 /*Social media bar*/
@@ -786,7 +287,7 @@ ul {
 .example-2 .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
-  top: -40px;
+  top: -35px;
 }
 .example-2 .icon-content a {
   position: relative;
@@ -797,8 +298,8 @@ ul {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  color: #4d4d4d;
-  background-color: #fff;
+  color: #F4F5F6;
+  background-color: #353B3C;
   transition: all 0.3s ease-in-out;
 }
 .example-2 .icon-content a:hover {

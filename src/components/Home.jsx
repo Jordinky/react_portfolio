@@ -2,13 +2,12 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 
 const Info = () => {
-  
 
     return(
-      <Grid container direction="column" alignContent="center" sx = {{marginTop: { xs: "12vh", sm: "15vh", md: "22vh" }}}>
+      <Grid container direction="column" alignContent="center" sx = {{marginTop: { xs: "15vh", sm: "17vh", md: "33vh" }}}>
           <Grid item >
-              <p class="hero glitch" data-text="Jordi Pelaez Calderini"><span>Jordi Pelaez Calderini</span></p>
-              <p class="hero glitch" data-text="Fullstack Developer"><span>Fullstack Developer</span></p>    
+               <div data-glitch="Jordi Pelaez Calderini" class="glitch">Jordi Pelaez Calderini</div>
+               <div data-glitch="FullStack Developer" class="glitch">FullStack Developer</div>
           </Grid>
           <Grid item>
             <Box sx={{justifyContent: 'flex-end' }}>
@@ -17,9 +16,7 @@ const Info = () => {
                 <span aria-hidden="true" class="hover-text">&nbsp;Check&nbsp;my&nbsp;cv</span>
               </a>
             </Box>
-
           </Grid>
-
       </Grid>
     );
 };

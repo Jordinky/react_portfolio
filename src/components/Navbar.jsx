@@ -75,10 +75,10 @@ const Navbar = () => {
                 key = {index}
                 href = {link}
                 sx={{
-                    color: "#ff088c",
+                    color: "#353B3C",
                     margin: 5,
                     textDecoration: "none",
-                    textShadow: "#ff088c 1px 0 10px"
+                    textShadow: "#ff088c 1px 0 3px"
                 }}  
                 >
                   {text}

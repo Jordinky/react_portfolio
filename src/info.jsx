@@ -26,7 +26,7 @@ export const info = {
           index: 11,
           img: portfolioImg,
           text: "Portfolio",
-          description: "Made with create-react-app and Mui",
+          description: "Personal portfolio website made with React and MUI",
           weblink: "https://jordinky.github.io/react_portfolio/#Info",
           githublink: "https://github.com/Jordinky/react_portfolio",
         },

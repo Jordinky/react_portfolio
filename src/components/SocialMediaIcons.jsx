@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 
 const SocialMediaIcons = () => {
   return (
-    <Box position = "fixed" sx = {{maxHeight: "1vh",marginTop: { xs: "10vh", sm: "15vh", md: "33vh" },marginLeft:"90vw"}}>
+    <Box position = "fixed" sx = {{maxHeight: "3vh",marginTop: { xs: "10vh", sm: "15vh", md: "33vh" },marginLeft:"90vw"}}>
       <ul class="example-2">
             <li class="icon-content">
               <a

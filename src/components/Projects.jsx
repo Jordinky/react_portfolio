@@ -7,20 +7,21 @@ import {info} from "../info.jsx";
 
 const Projects = () => {
 
-  
   return (
     <Grid container position = "relative" spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 8, md: 12 }} sx = {{padding: 1,overflowY: 'scroll', scrollbarWidth:"none", maxWidth: "85vw", marginTop: { xs: "10vh", sm: "15vh", md: "15vh", maxHeight: "75vh"}}}>
       {info.projectInfo.map(({img, text,description,index,githublink}) =>(
-        <Grid item xs={2} sm={4} md={4} key={index} size="grow">
-          <Card sx={{ maxWidth: "20vw",backgroundColor: "transparent",boxShadow: "2px 2px 10px rgba(0,0,0,1), -1px -1px 6px rgba(255, 255, 255, 0.4)", p:1,marginLeft:1,marginRight:1}}>
+        <Grid item xs={6} sm={6} md={6} key={index} size="grow">
+          <Card sx={{ color:"#846A6A", backgroundColor: "#353B3C",boxShadow: "2px 2px 5px rgba(0,0,0,1), -1px -1px 2px rgba(255, 255, 255, 0.4)", p:1}}>
             <CardMedia
             component = "img"
-            image =  {img}
-            title= {text}
+            image = {img}
+            title = {text}
+            height = "300"
+            width = "100"
             />
-            <CardContent sx = {{color: "#ff088c", textShadow: "#ff088c 1px 0 10px"}}>
-              <h3>{text}</h3>
-              <h5>{description}</h5>
+            <CardContent>
+              <p class = "card_content">{text}</p>
+              <p class = "card_content">{description}</p>
             </CardContent>
             <CardActions>
               <a className = "git-button" size="small" alignContent="center" href = {githublink} sx ={{color: "#ff088c", textShadow: "#ff088c 1px 0 10px"}}> 
