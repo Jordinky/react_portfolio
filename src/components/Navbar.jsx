@@ -33,7 +33,7 @@ const Navbar = () => {
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
-                color="inherit"
+                color="secondary"
               >
                 <MenuIcon />
               </IconButton>
@@ -59,8 +59,9 @@ const Navbar = () => {
                   <MenuItem key={index} onClick={handleCloseNavMenu} href = {link}>
                     <Link  
                         key = {index}
+                        href ={link}
                         textAlign="center"
-                        sx = {{textDecoration: "none"}}
+                        sx = {{textDecoration: "none",color:"#353B3C"}}
                         >{text}</Link>
                         
                   </MenuItem>

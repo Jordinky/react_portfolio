@@ -4,7 +4,21 @@ import { Box } from "@mui/material";
 
 const SocialMediaIcons = () => {
   return (
-    <Box position = "fixed" sx = {{maxHeight: "3vh",marginTop: { xs: "10vh", sm: "15vh", md: "33vh" },marginLeft:"90vw"}}>
+    <Box
+    border={1}
+    position="fixed"
+    sx={{
+      top: { xs: "auto", sm: "auto", md: "30vh" },
+      bottom: { xs: 0, sm: 0, md: "auto" },
+      right: { xs: 0, sm: 0, md: "2vw" },
+      width: { xs: "100%", sm: "100%", md: "auto" },
+      flexDirection: { xs: "row", sm: "row", md: "column" , lg: "column"},
+      justifyContent: { xs: "center", sm: "center", md: "flex-start" },
+      gap: { xs: "15px", sm: "15px", md: "20px" },
+      padding: { xs: "10px 0", sm: "10px 0", md: "0" },
+      zIndex: 10,
+    }}
+      >
       <ul class="example-2">
             <li class="icon-content">
               <a

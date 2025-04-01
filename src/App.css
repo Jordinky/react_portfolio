@@ -117,9 +117,9 @@ color: #ccc;
 
 	position: relative;
 	font-family: 'Roboto', sans-serif;
-	font-size: 11vh;
-	font-weight: 700;
-	line-height: 1.2;
+	font-size: clamp(2rem, 6vw, 4rem);
+	font-weight: bold;
+	margin-bottom: 1rem;
 	color: #353B3C;
 	letter-spacing: 5px;
 	z-index: 1;
@@ -260,12 +260,10 @@ color: #ccc;
 
 ul {
   list-style: none;
+  flex-direction: inherit;
+  display:flex;
 }
 
-.example-2 {
-
-  flex-direction: column;
-}
 .example-2 .icon-content {
   margin: 0 10px;
   position: relative;
@@ -274,7 +272,7 @@ ul {
 .example-2 .icon-content .tooltip {
   position: absolute;
   top: 100%;
-  right: 110%;
+  right: 100%;
   transform: translateY(200%);
   color: #fff;
   padding: 6px 10px;
@@ -287,7 +285,7 @@ ul {
 .example-2 .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
-  top: -35px;
+  top: -33px;
 }
 .example-2 .icon-content a {
   position: relative;
@@ -295,8 +293,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: clamp(30px, 5vw, 50px);
+  height: clamp(30px, 5vw, 50px);
   border-radius: 50%;
   color: #F4F5F6;
   background-color: #353B3C;
