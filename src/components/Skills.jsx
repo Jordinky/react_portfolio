@@ -21,14 +21,18 @@ const AboutMe = () => {
 
   return (
     <>
-    <Grid Container position = "relative" sx = {{marginTop: { xs: "10vh", sm: "15vh", md: "20vh" }, minWidth: "50vw", maxWidth: "50vw"}}>
+    <Grid Container position = "relative" 
+    sx = {{
+      marginTop: { xs: "20vh", sm: "25vh", md: "20vh" },
+      width: {xs: "70vw", sm: "70vw",md:"50vw"},
+      }}>
       <Grid container
         direction="row"
         sx={{
           p:0.5,
           backgroundColor: "#846A6A",
           borderRadius: 1,
-          maxWidth: "50vw",
+         
         }}>
         <span id="red"></span>
         <span id="yellow"></span>

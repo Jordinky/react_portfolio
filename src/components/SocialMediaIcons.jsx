@@ -5,17 +5,21 @@ import { Box } from "@mui/material";
 const SocialMediaIcons = () => {
   return (
     <Box
-    border={1}
     position="fixed"
+
     sx={{
-      top: { xs: "auto", sm: "auto", md: "30vh" },
-      bottom: { xs: 0, sm: 0, md: "auto" },
-      right: { xs: 0, sm: 0, md: "2vw" },
-      width: { xs: "100%", sm: "100%", md: "auto" },
-      flexDirection: { xs: "row", sm: "row", md: "column" , lg: "column"},
-      justifyContent: { xs: "center", sm: "center", md: "flex-start" },
+      top: {md:"30vh"},
+      bottom: { xs: 0, sm: 0, md: "auto" }, // Place at the bottom for xs and sm
+      left: { xs: "50%", sm: "50%", md: "auto" }, // Center horizontally for xs and sm
+      transform: { xs: "translateX(-50%)", sm: "translateX(-50%)", md: "none" }, // Adjust for horizontal centering
+      right: { xs: "auto", sm: "auto", md: "2vw" }, // Keep right alignment for md and larger
+      width: { xs: "auto", sm: "auto", md: "auto" },
+      display: "flex",
+      flexDirection: { xs: "row", sm: "row", md: "column" }, // Row for xs and sm, column for md and larger
+      justifyContent: "center",
+      alignItems: "center",
       gap: { xs: "15px", sm: "15px", md: "20px" },
-      padding: { xs: "10px 0", sm: "10px 0", md: "0" },
+      padding: { xs: "10px", sm: "10px", md: "0" },
       zIndex: 10,
     }}
       >
