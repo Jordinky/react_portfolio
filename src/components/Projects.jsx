@@ -3,12 +3,21 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import {info} from "../info.jsx";
+import {info} from "../info.js";
 
 const Projects = () => {
 
   return (
-    <Grid container position = "relative" spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 8, md: 12 }} sx = {{padding: 1,overflowY: 'scroll', scrollbarWidth:"none", maxWidth: "85vw", marginTop: { xs: "10vh", sm: "15vh", md: "15vh", maxHeight: "75vh"}}}>
+    <Grid container position = "relative" 
+    spacing={{ xs: 2, md: 3 }} 
+    columns={{ xs: 2, sm: 8, md: 12 }} 
+    sx = {{
+      padding: 1,
+      overflowY: 'scroll', 
+      scrollbarWidth:"none", 
+      marginTop: { xs: "10vh", sm: "15vh", md: "15vh"},
+      width: {xs: "95vw", sm: "70vw",md:"70vw"},
+    }}>
       {info.projectInfo.map(({img, text,description,index,githublink}) =>(
         <Grid item xs={6} sm={6} md={6} key={index} size="grow">
           <Card sx={{ color:"#846A6A", backgroundColor: "#353B3C",boxShadow: "2px 2px 5px rgba(0,0,0,1), -1px -1px 2px rgba(255, 255, 255, 0.4)", p:1}}>
@@ -19,7 +28,8 @@ const Projects = () => {
             height = "300"
             width = "100"
             />
-            <CardContent>
+            <CardContent
+            marginBottom = {3}>
               <p class = "card_content">{text}</p>
               <p class = "card_content">{description}</p>
             </CardContent>

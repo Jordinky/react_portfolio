@@ -24,7 +24,7 @@ const AboutMe = () => {
     <Grid Container position = "relative" 
     sx = {{
       marginTop: { xs: "20vh", sm: "25vh", md: "20vh" },
-      width: {xs: "70vw", sm: "70vw",md:"50vw"},
+      width: {xs: "100vw", sm: "70vw",md:"50vw"},
       }}>
       <Grid container
         direction="row"
@@ -43,8 +43,7 @@ const AboutMe = () => {
           sx={{
             paddingTop: 3 ,
             paddingBottom:3,
-            minHeight: "50vh",
-            
+            minHeight: "60vh",
             backgroundColor: "#353B3C",
             display: "flex",
             borderRadius: 1

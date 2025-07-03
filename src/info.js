@@ -1,6 +1,7 @@
 import chatImg from '../src/img/chat.webp'
-import diceImg from '../src/img/dice.jpg'
+import diceImg from '../src/img/dice.png'
 import portfolioImg from '../src/img/portfolio.png'
+import library from '../src/img/library.png'
 
 export const info = {
 
@@ -43,6 +44,13 @@ export const info = {
           text: "Chat Application",
           description: "Chat application made for a final project from a bootcamp, this application was made with React,Nodejs and socket.io and MongoDB",
           githublink: "https://github.com/Jordinky/Sprint7" ,
+        },
+        {
+          index: 14,
+          img: library,
+          text: "Book application",
+          description: "Book application made with Lovable, for learning purposes",
+          githublink: "https://github.com/Jordinky/author-spark-unleashed" ,
         }
       ],
 

@@ -6,12 +6,9 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import {info} from "../info.jsx";
+import {info} from "../info.js";
 import Link from "@mui/material/Link";
-
 import MenuItem from "@mui/material/MenuItem";
-
-
 
 const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
