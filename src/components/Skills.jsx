@@ -23,7 +23,6 @@ const AboutMe = () => {
     <>
     <Grid Container position = "relative" 
     sx = {{
-      marginTop: { xs: "20vh", sm: "25vh", md: "20vh" },
       width: {xs: "100vw", sm: "70vw",md:"50vw"},
       }}>
       <Grid container

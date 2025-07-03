@@ -8,7 +8,7 @@ function App() {
     <main>   
         <Navbar/>
         <div class="environment"></div>
-        <Box sx={{ display: 'flex', justifyContent: 'center', }}>
+        <Box sx={{ marginTop: { xs: "20vh", sm: "25vh", md: "20vh" }, display: 'flex', justifyContent: 'center', }}>
           <RoutesTree/>
         </Box>
     </main>

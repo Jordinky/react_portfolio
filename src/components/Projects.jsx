@@ -12,10 +12,8 @@ const Projects = () => {
     spacing={{ xs: 2, md: 3 }} 
     columns={{ xs: 2, sm: 8, md: 12 }} 
     sx = {{
-      padding: 1,
       overflowY: 'scroll', 
       scrollbarWidth:"none", 
-      marginTop: { xs: "10vh", sm: "15vh", md: "15vh"},
       width: {xs: "95vw", sm: "70vw",md:"70vw"},
     }}>
       {info.projectInfo.map(({img, text,description,index,githublink}) =>(
